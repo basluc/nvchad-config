@@ -36,9 +36,17 @@ M.options = {
 --   }
 -- }
 
--- M.ui = {
---    theme = "gruvchad",
--- }
---
+M.ui = {
+    theme = "rxyhn",
+    changed_themes = {
+        rxyhn = {
+            base_16 = {
+                base02 = "#202b2f",
+                base03 = "#283337"
+            }
+        }
+    }
+}
+
 
 return M
