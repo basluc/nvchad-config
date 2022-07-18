@@ -12,7 +12,7 @@ M.setup_lsp = function(attach, capabilities)
         "pyright",
         "rust_analyzer",
         "remark_ls",
-        -- "sumneko_lua",
+        "sumneko_lua",
         "yamlls",
         "dockerls",
         "tsserver"

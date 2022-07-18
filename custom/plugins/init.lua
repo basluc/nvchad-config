@@ -1,8 +1,8 @@
 -- local configs = require "configs"
-local lspconfig = require "lspconfig"
+-- local lspconfig = require "lspconfig"
 
 return {
-    ['williamboman/nvim-lsp-installer'] = {},
+    -- ['williamboman/nvim-lsp-installer'] = {},
     ['hrsh7th/vim-vsnip'] = {},
     ['hrsh7th/vim-vsnip-integ'] = {},
     ['rmagatti/auto-session'] = {
