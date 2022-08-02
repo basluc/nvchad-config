@@ -9,11 +9,11 @@ local pluginConfs = require "custom.plugins.configs"
 M.plugins = {
     user = userPlugins,
 
-    options = {
-       lspconfig = {
-         setup_lspconf = "custom.plugins.lspconfig"
-       },
-    },
+    -- options = {
+    --    lspconfig = {
+    --      setup_lspconf = "custom.plugins.lspconfig"
+    --    },
+    -- },
 
     override = {
         ["nvim-treesitter/nvim-treesitter"] = pluginConfs.treesitter
