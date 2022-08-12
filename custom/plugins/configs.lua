@@ -19,7 +19,7 @@ M.treesitter = {
         "rust",
     },
     indent = {
-        enable = true
+        -- enable = true
     },
 
     -- highlight = {
