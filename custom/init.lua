@@ -4,7 +4,7 @@
 vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal"
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
-vim.o.autoindent = false
+-- vim.o.autoindent = true
 vim.o.softtabstop = 4
 -- vim.o.ff = unix
 vim.o.tabstop = 4
