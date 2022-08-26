@@ -17,17 +17,18 @@ local servers = {
   "dockerls",
   "intelephense",
   "yamlls",
+  "tsserver",
     -- "html",
     -- "lua-language-server"
-    -- "cssls",
+    "cssls",
     -- "clangd",
     -- "intelephense",
     -- "pyright",
     -- "rust_analyzer",
-    -- "remark_ls",
+    "remark_ls",
     -- "sumneko_lua",
     -- "yamlls",
-    -- "dockerls",
+    "dockerls",
     -- "tsserver"
 }
 
