@@ -19,7 +19,8 @@ M.treesitter = {
         "rust",
     },
     indent = {
-        enable = true
+        enable = true,
+        disable = {"python"}
         -- disable = true
     },
 }

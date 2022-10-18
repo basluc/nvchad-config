@@ -34,11 +34,14 @@ return {
     },
     ['hrsh7th/vim-vsnip'] = {},
     ['hrsh7th/vim-vsnip-integ'] = {},
-    ['rmagatti/auto-session'] = {
-        cmd = {
-            "SaveSession",
-            "RestoreSession",
-            "DeleteSession",
-        }
-    },
+    ['mhinz/vim-startify'] = {},
+    -- ['nvim-lua/plenary.nvim'] = {},
+    -- ['sindrets/diffview.nvim'] = {},
+    -- ['folke/persistence.nvim'] = {
+    --     event = "BufReadPre", -- this will only start session saving when an actual file was opened
+    --     module = "persistence",
+    --     config = function()
+    --         require("persistence").setup()
+    --     end,
+    -- },
 }
