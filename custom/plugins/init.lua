@@ -34,7 +34,7 @@ return {
     },
     ['hrsh7th/vim-vsnip'] = {},
     ['hrsh7th/vim-vsnip-integ'] = {},
-    ['mhinz/vim-startify'] = {},
+    -- ['mhinz/vim-startify'] = {},
     -- ['nvim-lua/plenary.nvim'] = {},
     -- ['sindrets/diffview.nvim'] = {},
     -- ['folke/persistence.nvim'] = {
