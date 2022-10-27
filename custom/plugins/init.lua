@@ -1,47 +1,41 @@
 -- local configs = require "configs"
 -- local lspconfig = require "lspconfig"
+local pluginConfs = require "custom.plugins.configs"
 
 return {
-    -- ['williamboman/nvim-lsp-installer'] = {},
-    ["williamboman/mason.nvim"] = {
+  ['hrsh7th/vim-vsnip'] = {},
+  ['hrsh7th/vim-vsnip-integ'] = {},
+
+  --Override
+  ["nvim-treesitter/nvim-treesitter"] = {
+    override_options = pluginConfs.treesitter
+  },
+
+  ["williamboman/mason.nvim"] = {
+    override_options = {
       ensure_installed = {
         "lua-language-server",
         "pyright",
-        "rust_analyzer",
+        "rust-analyzer",
         "intelephense",
         "html-lsp",
         "css-lsp",
         "dockerfile-language-server",
-        "intelephense",
+      }
     }
-      -- "html",
-      -- "lua-language-server"
-      -- "cssls",
-      -- "intelephense",
-      -- "pyright",
-      -- "rust_analyzer",
-      -- "remark_ls",
-      -- "sumneko_lua",
-      -- "yamlls",
-      -- "dockerls",
-      -- "tsserver"
-    },
-    ["neovim/nvim-lspconfig"] = {
-        config = function()
-          require "plugins.configs.lspconfig"
-          require "custom.plugins.lspconfig"
-        end,
-    },
-    ['hrsh7th/vim-vsnip'] = {},
-    ['hrsh7th/vim-vsnip-integ'] = {},
-    -- ['mhinz/vim-startify'] = {},
-    -- ['nvim-lua/plenary.nvim'] = {},
-    -- ['sindrets/diffview.nvim'] = {},
-    -- ['folke/persistence.nvim'] = {
-    --     event = "BufReadPre", -- this will only start session saving when an actual file was opened
-    --     module = "persistence",
-    --     config = function()
-    --         require("persistence").setup()
-    --     end,
-    -- },
+  },
+
+  ["neovim/nvim-lspconfig"] = {
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.plugins.lspconfig"
+    end,
+  },
+
+
+
+  -- ['mhinz/vim-startify'] = {},
+  -- ['nvim-lua/plenary.nvim'] = {},
+  ['sindrets/diffview.nvim'] = {},
+
 }
