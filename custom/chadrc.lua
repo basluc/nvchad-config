@@ -13,7 +13,7 @@ M.ui = {
   hl_override = {},
   changed_themes = {},
   -- theme_toggle = { "onedark", "one_light" },
-  -- theme = "kanagawa", -- default theme
+  theme = "gruvbox", -- default theme
   transparency = true,
 }
 
