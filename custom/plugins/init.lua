@@ -32,10 +32,8 @@ return {
         end,
     },
 
+    ["rmagatti/auto-session"] = {},
 
-
-    -- ['mhinz/vim-startify'] = {},
-    -- ['nvim-lua/plenary.nvim'] = {},
      ["sindrets/diffview.nvim"] = {
           after = "plenary.nvim",
           config = function()
