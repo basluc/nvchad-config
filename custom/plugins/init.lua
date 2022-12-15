@@ -41,5 +41,7 @@ return {
           end,
        },
 
-     ["nvim-lua/plenary.nvim"] = {rm_default_opts = true },
+    ["nvim-lua/plenary.nvim"] = {rm_default_opts = true },
+
+    ['kkoomen/vim-doge'] = {run = ':call doge#install()'},
 }
