@@ -10,4 +10,4 @@ vim.o.tabstop = 4
 
 -- autosession
 vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal"
-
+vim.opt.termguicolors = true

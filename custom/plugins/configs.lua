@@ -20,7 +20,7 @@ M.treesitter = {
     },
     indent = {
         enable = true,
-        disable = {"python", "javascript"}
+        disable = {"javascript"}
     },
 }
 

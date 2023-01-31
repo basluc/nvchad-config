@@ -6,6 +6,7 @@ local lspconfig = require "lspconfig"
 local servers = {
   "sumneko_lua",
   "pyright",
+  -- "pylint",
   "rust_analyzer",
   "intelephense",
   "html",
