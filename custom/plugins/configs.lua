@@ -23,5 +23,4 @@ M.treesitter = {
         disable = {"javascript"}
     },
 }
-
 return M

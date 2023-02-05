@@ -44,29 +44,9 @@ return {
     ["nvim-lua/plenary.nvim"] = {rm_default_opts = true },
     ['kkoomen/vim-doge'] = {run = ':call doge#install()'},
     ['kdheepak/lazygit.nvim'] = {},
-
-    ['mfussenegger/nvim-dap'] = {
-        after = "nvim-treesitter"
-    },
-
-    ['theHamsta/nvim-dap-virtual-text'] = { after = "nvim-dap" },
-    -- ['rcarriga/nvim-dap-ui'] = { after = "nvim-dap" },
-    -- ['folke/neodev.nvim'] = {
-    --     config = function()
-    --         require("neodev").setup({
-    --             library = {
-    --                 plugins = {"nvim-dap-ui"}, 
-    --                 types = true,
-    --                 runtime = true,
-    --                 enabled = true
-    --             },
-    --         })
-    --     end
-    -- },
-
     ['rcarriga/nvim-notify'] = { 
         config = function()
             require("notify").setup({background_colour = "#000000"})
         end
-    }
+    },
 }
