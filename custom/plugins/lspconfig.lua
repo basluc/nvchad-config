@@ -4,7 +4,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 
 local servers = {
-  "sumneko_lua",
+  -- "sumneko_lua",
   "pyright",
   -- "pylint",
   "rust_analyzer",
@@ -15,9 +15,7 @@ local servers = {
   "intelephense",
   "yamlls",
   "tsserver",
-  "cssls",
   "remark_ls",
-  "dockerls",
 }
 
 for _, lsp in ipairs(servers) do
