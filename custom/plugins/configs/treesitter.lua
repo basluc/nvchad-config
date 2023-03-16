@@ -1,6 +1,4 @@
-M = {}
-
-M.treesitter = {
+return {
     ensure_installed = {
         "lua",
         "vim",
@@ -23,4 +21,3 @@ M.treesitter = {
         disable = {"javascript"}
     },
 }
-return M

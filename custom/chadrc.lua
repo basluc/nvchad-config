@@ -8,9 +8,9 @@ M.options = {
 }
 
 M.ui = {
-  hl = highlights,
-  hl_add = {},
-  hl_override = {},
+  -- hl = highlights,
+  -- hl_add = {},
+  -- hl_override = {},
   changed_themes = {},
   -- theme_toggle = { "onedark", "one_light" },
   theme = "gruvbox", -- default theme
@@ -20,5 +20,5 @@ M.ui = {
 -- check core.mappings for table structure
 M.mappings = require "custom.mappings"
 
-M.plugins = require "custom.plugins"
+M.plugins = "custom.plugins"
 return M
