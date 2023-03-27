@@ -5,7 +5,6 @@ return {
     {'hrsh7th/vim-vsnip'},
     {'hrsh7th/vim-vsnip-integ'},
 
-    --Override
     {
         "nvim-treesitter/nvim-treesitter",
         opts = function ()
@@ -17,13 +16,13 @@ return {
         "williamboman/mason.nvim",
         opts = {
             ensure_installed = {
-            "lua-language-server",
-            "pyright",
-            "rust-analyzer",
-            "intelephense",
-            "html-lsp",
-            "css-lsp",
-            "dockerfile-language-server",
+                "lua-language-server",
+                "pyright",
+                "rust-analyzer",
+                "intelephense",
+                "html-lsp",
+                "css-lsp",
+                "dockerfile-language-server",
             }
         }
     },
