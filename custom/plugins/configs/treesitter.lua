@@ -18,6 +18,6 @@ return {
     },
     indent = {
         enable = true,
-        disable = {"javascript"}
+        -- disable = {"javascript"}
     },
 }

@@ -32,6 +32,9 @@ return {
         config = function()
             require "plugins.configs.lspconfig"
             require "custom.plugins.configs.lspconfig"
+            vim.diagnostic.config({
+              virtual_text = false
+            })
         end,
     },
 
