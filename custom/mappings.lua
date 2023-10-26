@@ -2,7 +2,7 @@ local M = {}
 
 M.lazygit = {
     n = {
-        ["<leader>gg"] = {"<cmd> LazyGit <CR>", "LazyGit"}
+        ["<leader>gg"] = {"<cmd> LazyGit <CR>", "LazyGit"},
     }
 }
 

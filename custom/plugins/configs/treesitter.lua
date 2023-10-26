@@ -15,6 +15,8 @@ return {
         "typescript",
         "yaml",
         "rust",
+        "twig",
+        "phpdoc",
     },
     indent = {
         enable = true,
