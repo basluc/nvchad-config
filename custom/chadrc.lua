@@ -8,11 +8,7 @@ M.options = {
 }
 
 M.ui = {
-  -- hl = highlights,
-  -- hl_add = {},
-  -- hl_override = {},
   changed_themes = {},
-  -- theme_toggle = { "onedark", "one_light" },
   theme = "gruvbox", -- default theme
   transparency = true,
 }

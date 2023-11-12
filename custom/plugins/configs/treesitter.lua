@@ -17,6 +17,7 @@ return {
         "rust",
         "twig",
         "phpdoc",
+        "gdscript"
     },
     indent = {
         enable = true,
