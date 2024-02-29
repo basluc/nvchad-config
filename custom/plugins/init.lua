@@ -97,4 +97,6 @@ return {
         -- refer to the configuration section below
         },
     },
+
+    {'sindrets/diffview.nvim', lazy = false, dependencies = { "nvim-tree/nvim-web-devicons" }}
 }
