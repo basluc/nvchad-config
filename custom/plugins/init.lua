@@ -1,15 +1,10 @@
--- local configs = require "configs"
--- local lspconfig = require "lspconfig"
-
 return {
     {'hrsh7th/vim-vsnip'},
     {'hrsh7th/vim-vsnip-integ'},
 
     {
         "nvim-treesitter/nvim-treesitter",
-        opts = function ()
-            require "custom.plugins.configs.treesitter"
-        end
+        opts = require "custom.plugins.configs.treesitter"
     },
 
     {
@@ -22,7 +17,10 @@ return {
                 "intelephense",
                 "html-lsp",
                 "css-lsp",
-                "dockerfile-language-server",
+                "docker-compose-language-service",
+                "twiggy-language-server",
+                "typescript-language-server",
+                "yaml-language-server",
                 "gopls",
             },
         },
@@ -56,13 +54,13 @@ return {
         end
     },
 
-    {
-        "sindrets/diffview.nvim",
-        after = "plenary.nvim",
-        config = function()
-            require("diffview").setup()
-        end,
-    },
+    -- {
+    --     "sindrets/diffview.nvim",
+    --     after = "plenary.nvim",
+    --     config = function()
+    --         require("diffview").setup()
+    --     end,
+    -- },
 
     {
         "nvim-lua/plenary.nvim",
@@ -98,5 +96,5 @@ return {
         },
     },
 
-    {'sindrets/diffview.nvim', lazy = false, dependencies = { "nvim-tree/nvim-web-devicons" }}
+    -- {'sindrets/diffview.nvim', lazy = false, dependencies = { "nvim-tree/nvim-web-devicons" }}
 }
