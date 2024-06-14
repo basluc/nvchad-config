@@ -9,13 +9,14 @@ local servers = {
     "intelephense",
     "html",
     "cssls",
-    "dockerls",
+    "docker_compose_language_service",
     "intelephense",
     "yamlls",
     "tsserver",
     "remark_ls",
-    "gopls",
-    "gdscript",
+    -- "gopls",
+    -- "gdscript",
+    "twiggy_language_server",
 }
 
 for _, lsp in ipairs(servers) do
