@@ -10,6 +10,7 @@ M.options = {
 M.ui = {
   changed_themes = {},
   theme = "gruvbox", -- default theme
+  -- theme = "tokyonight", -- default theme
   transparency = true,
 }
 
