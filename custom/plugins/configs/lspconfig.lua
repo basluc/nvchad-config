@@ -21,17 +21,6 @@ local servers = {
 }
 
 for _, lsp in ipairs(servers) do
-  if lsp == "lua_ls" then
-    vim.o.shiftwidth = 2
-    vim.o.softtabstop = 2
-    vim.o.tabstop = 2
-
-  else
-    vim.o.shiftwidth = 4
-    vim.o.softtabstop = 4
-    vim.o.tabstop = 4
-  end
-
   lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
