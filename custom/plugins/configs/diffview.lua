@@ -1,3 +1,5 @@
+local actions = require("diffview.actions")
+
 return {
   diff_binaries = false,    -- Show diffs for binaries
   enhanced_diff_hl = true, -- See |diffview-config-enhanced_diff_hl|

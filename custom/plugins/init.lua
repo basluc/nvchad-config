@@ -88,5 +88,13 @@ return {
     },
   },
 
-  {'sindrets/diffview.nvim', lazy = false, dependencies = { "nvim-tree/nvim-web-devicons" }},
+  {
+    'sindrets/diffview.nvim',
+    lazy = false,
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function ()
+      local config = require "custom.plugins.configs.diffview"
+      require("diffview").setup(config)
+    end
+  },
 }
