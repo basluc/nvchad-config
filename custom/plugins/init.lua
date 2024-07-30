@@ -72,6 +72,7 @@ return {
 
   {
     'rcarriga/nvim-notify',
+    lazy = false,
     config = function()
       require("notify").setup({background_colour = "#000000"})
     end
@@ -95,6 +96,62 @@ return {
     config = function ()
       local config = require "custom.plugins.configs.diffview"
       require("diffview").setup(config)
+    end
+  },
+
+  {
+    "folke/lazydev.nvim",
+    ft = "lua", -- only load on lua files
+    opts = {
+      library = {
+        -- See the configuration section for more details
+        -- Load luvit types when the `vim.uv` word is found
+        { path = "luvit-meta/library", words = { "vim%.uv" } },
+        { plugins = { "nvim-dap-ui" }, types = true },
+      },
+    },
+  },
+
+  { "Bilal2453/luvit-meta", lazy = true }, -- optional `vim.uv` typings
+
+  { -- optional completion source for require statements and module annotations
+    "hrsh7th/nvim-cmp",
+    opts = function(_, opts)
+      opts.sources = opts.sources or {}
+      table.insert(opts.sources, {
+        name = "lazydev",
+        group_index = 0, -- set group index to 0 to skip loading LuaLS completions
+      })
+    end,
+  },
+
+  {
+    'mfussenegger/nvim-dap',
+    config = function ()
+      require("custom.plugins.configs.dap_php")
+    end
+  },
+
+  {
+    "rcarriga/nvim-dap-ui",
+    dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"},
+    lazy=false,
+    config = function()
+      require("dapui").setup({expand_lines = false})
+
+      local dap, dapui = require("dap"), require("dapui")
+      dap.listeners.before.attach.dapui_config = function()
+        dapui.open()
+      end
+      dap.listeners.before.launch.dapui_config = function()
+        dapui.open()
+      end
+      dap.listeners.before.event_terminated.dapui_config = function()
+        dapui.close()
+      end
+      dap.listeners.before.event_exited.dapui_config = function()
+        dapui.close()
+      end
     end
   },
 }
