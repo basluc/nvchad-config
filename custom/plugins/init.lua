@@ -128,6 +128,21 @@ return {
   {
     'mfussenegger/nvim-dap',
     config = function ()
+      vim.fn.sign_define('DapBreakpoint', {text='🛑', texthl='DapBreakpoint', linehl='', numhl=''})
+      vim.fn.sign_define('DapBreakpointCondition', {text='⚠️', texthl='DapBreakpointCondition', linehl='', numhl=''})
+      vim.fn.sign_define('DapLogPoint', {text='📘', texthl='DapLogPoint', linehl='', numhl=''})
+      vim.fn.sign_define('DapStopped', {text='⏩', texthl='DapStopped', linehl='', numhl=''})
+      vim.fn.sign_define('DapBreakpointRejected', {text='❌', texthl='DapBreakpointRejected', linehl='', numhl=''})
+
+      -- Define highlight groups for each type of DAP sign
+      vim.cmd [[
+        highlight DapBreakpoint guifg=#FF5555
+        highlight DapBreakpointCondition guifg=#FFA500
+        highlight DapLogPoint guifg=#00FF00
+        highlight DapStopped guifg=#0000FF
+        highlight DapBreakpointRejected guifg=#FF0000
+      ]]
+
       require("custom.plugins.configs.dap_php")
     end
   },
